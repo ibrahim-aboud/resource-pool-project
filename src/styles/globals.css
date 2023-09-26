@@ -1,0 +1,25 @@
+*{
+    background-color: white;
+}
+.imageSeries{
+    display: flex;
+    width: 100vw;
+    opacity: 0.2;
+}
+.fullImage{
+    position: absolute;
+    z-index: -1;
+}
+p{
+    color: black;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+button{
+    color: black;
+}
+.bigContainer{
+    position: relative;
+    z-index: 0;
+}

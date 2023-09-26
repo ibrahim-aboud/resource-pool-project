@@ -1,0 +1,10 @@
+.rectangle{
+    background-color: #A200FF;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: x-large;
+}
