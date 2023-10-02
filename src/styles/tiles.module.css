@@ -1,0 +1,49 @@
+.bigContainer{
+ 
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+}
+.icon{
+    background-color: #DBFF00;
+}
+.categoryTiles{
+    margin: 250px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.categoryTile{
+    font-size: 5vw;
+    border: solid 2px #1E3050;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.categoryTile:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.categoryTile:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+.stickyNotificationContainer{
+    position : fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    width: 100%;
+}
+.stickyNotification {
+    position: fixed;
+    bottom: 10%; /* To stick it at the top */
+    /* Alternatively, you can use 'bottom: 0;' to stick it at the bottom */
+    width: auto;
+    background-color: #1E3050;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* To make sure it's above other elements */
+}

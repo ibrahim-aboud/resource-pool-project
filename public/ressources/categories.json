@@ -1,0 +1,35 @@
+{
+    "categories":[
+        {
+            "id":1,
+            "title":"Developing Skills",
+            "explanation":"this is an explanation"
+            
+        },
+        {
+            "id":2,
+            "title":"Creation",
+            "explanation":"this is an explanation"
+        },
+        {
+            "id":3,
+            "title":"Quick Tools",
+            "explanation":"this is an explanation"
+        },
+        {
+            "id":4,
+            "title":"Discover the internet",
+            "explanation":"this is an explanation"
+        },
+        {
+            "id":5,
+            "title":"Free to use Data Banks",
+            "explanation":"this is an explanation"
+        },
+        {
+            "id":6,
+            "title":"Simulation",
+            "explanation":"this is an explanation"
+        }
+    ]
+}
