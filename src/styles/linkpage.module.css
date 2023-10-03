@@ -3,7 +3,6 @@
     width: 100%;
 }
 .content{
-    background-color: #DBFF00;
     border : solid 2px #1E3050;
     width: 80vw;
     margin: 5vw 10vw;
@@ -15,7 +14,6 @@
 }
 .title{
     font-size: xx-large;
-    color: #1E3050;
     font-family: Montserrat;
     font-weight: bold;
     text-align: center;
@@ -23,7 +21,6 @@
 }
 .description{
     font-size: large;
-    color: #1E3050;
     font-family: Montserrat;
     text-align: center;
     width: 60vw;
@@ -32,8 +29,6 @@
 .button{
     font: large;
     text-align: center;
-    color: white;
-    background-color: #FF005E;
     padding: 2vh 2vw ;
     border: solid 2px #1E3050;
     font-weight: 500;
@@ -42,19 +37,7 @@
     width: 15vw;
 
 }
-.button1{
-    font: large;
-    text-align: center;
-    color: white;
-    background-color: #A200FF;
-    padding: 2vh 2vw ;
-    border: solid 2px #1E3050;
-    font-weight: 500;
-    font-family: Montserrat;
-    border-radius: 40px;
-    width: 15vw;
-    margin-bottom:5vh
-}
+
 .buttonContainer{
     display: flex;
     justify-content: center;

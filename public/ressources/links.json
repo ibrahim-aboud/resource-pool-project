@@ -2,31 +2,180 @@
     "resources": [
       {
         "id": 1,
-        "title": "Introduction to Programming",
-        "description": "Learn the basics of programming with this comprehensive guide.",
+        "title": "MIT Open Course Ware",
+        "description": "For those intrested in learning professionaly, you can access - for free - a full library of professional courses provided by MIT ...",
         "categoryId": 1,
-        "link": "https://example.com/intro-to-programming"
+        "link": "https://ocw.mit.edu/"
       },
       {
         "id": 2,
-        "title": "Web Development Fundamentals",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "title": "Learn OpenGL",
+        "description": "Want to learn OpenGL library from a to z ? have this website ...",
+        "categoryId": 1,
+        "link": "https://learnopengl.com/"
+      },
+      {
+        "id": 16,
+        "title": "Scale of the universe",
+        "description": " feel the scale of the universe by exploring the smallest elements and the biggest structures our universe has, educational, and breathtaking",
+        "categoryId": 4,
+        "link": "https://scaleofuniverse.com/"
+      },
+      {
+        "id": 16,
+        "title": "Library of Babel",
+        "description": " there is a little concept, an idea that says : how would it feel like to live in a library, containing limited sized books, with every combination of characters possible, the library would be finite of course, but so big, our brains can't handle it, even though the number can still be written down on a finite sheet of paper, you can see that the library has all discussions of all kinds, every book written in the past , present, future, or those that won't be ever written, game dialogues, chatgpt prompts, chat gpt answers, basically anything, Breathtaking ",
+        "categoryId": 4,
+        "link": "https://libraryofbabel.info/"
+      },
+      {
+        "id": 7,
+        "title": "Chemix",
+        "description": "for those in chemistry domain, you can design beautiful illustrations containing chemistry experiments easily with this free to use website ",
         "categoryId": 2,
-        "link": "https://example.com/web-dev-fundamentals"
+        "link": "https://chemix.org/"
+      },
+      {
+        "id": 8,
+        "title": "Free Latex editor",
+        "description": "here is a free and online alternative of scientific workplace, with an applealing intuitive gui, for those who can spend extra money, you can edit with a user interface instead of coding",
+        "categoryId": 2,
+        "link": "https://www.overleaf.com/"
       },
       {
         "id": 3,
-        "title": "Data Science Tutorials",
-        "description": "Dive into the world of data science with these tutorials and resources.",
-        "categoryId": 3,
-        "link": "https://example.com/data-science-tutorials"
+        "title": "Learn react the fun way",
+        "description": "Visual explanations can be very helpful when learning a new skill, how about learning react that way ? ...",
+        "categoryId": 1,
+        "link": "https://react.gg/visualized"
       },
       {
         "id": 4,
-        "title": "Machine Learning Basics",
-        "description": "Learn the basics of machine learning and artificial intelligence.",
+        "title": "Developer's RoadMap",
+        "description": "Are you into Developement ? do you like to be guided with a fully detailed roadmap to help you out in your learning journey, then this website is for you ",
+        "categoryId": 1,
+        "link": "https://roadmap.sh/"
+      },
+      {
+        "id": 5,
+        "title": "recommended youtube channel to learn c++",
+        "description": " the best way to learn a programming language is by understanding how it works and applying it in real life examples, with c++ you can code shaders, make game engines ... etc ",
+        "categoryId": 1,
+        "link": "https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb"
+      },
+      {
+        "id": 6,
+        "title": "Advanced unity tutorials",
+        "description": " You just finished your unity tutorial, but you feel like it is not enough, well you are not alone, if you are serious about game dev, you need to go deeper into the more technical stuff, this playlist contains some videos that serve this purpose ",
+        "categoryId": 1,
+        "link": "https://www.youtube.com/watch?v=Ouu3D_VHx9o&list=PLPV2KyIb3jR5qEyOlJImGFoHcxg9XUQci"
+      },
+      {
+        "id": 9,
+        "title": "musescore",
+        "description": "musecore is best open source softawre to write music sheets and play orchestra with a realistic playback",
+        "categoryId": 2,
+        "link": "https://musescore.org/en/download"
+      },
+      {
+        "id": 10,
+        "title": "Developer's RoadMap",
+        "description": "Are you into Developement ? do you like to be guided with a fully detailed roadmap to help you out in your learning journey, then this website is for you ",
+        "categoryId": 1,
+        "link": ""
+      },
+      {
+        "id": 11,
+        "title": "Manim",
+        "description": "if you watched a youtube video from - three blue one brown - or you just are intrested in animtating mathematical equations, graphs ... etc, then you might be familiar with manim, an open source python libary in which you can do all of the previously mentioned things ",
+        "categoryId": 2,
+        "link": "https://www.manim.community/"
+      },
+      {
+        "id": 12,
+        "title": "simple physics online simulator",
+        "description": "want to understand how mirrors, light and fluids work, are you intrested in understanding physics by visual experimentation, this website contains a full library of experiment that you can play one by one to understand your favorite topics ",
+        "categoryId": 6,
+        "link": "https://ophysics.com/"
+      },
+      {
+        "id": 13,
+        "title": "freeConvert",
+        "description": "free and a recommended file conversion and compressions tool for everyday use ",
+        "categoryId": 3,
+        "link": "https://www.freeconvert.com/"
+      },
+      {
+        "id": 14,
+        "title": "sfx generator",
+        "description": " for game developers or sound designers, this tool can generate 8-bit sound effects for you to use in your game/website ",
+        "categoryId": 2,
+        "link": "https://sfxr.me/"
+      },
+      {
+        "id": 15,
+        "title": "light Pollution map",
+        "description": " for astronomy enthusiasts, and stargazers, this website will let you check light polution in your area, and basically any other place in the planet, because light pollution is a cruicial factor when it comes to the quality of a stargazing night ",
+        "categoryId": 3,
+        "link": "https://www.lightpollutionmap.info/"
+      },
+      {
+        "id": 17,
+        "title": "16 personalities",
+        "description": " have an acurate test of your personality with this website, it feels like you are finally being understood ",
         "categoryId": 4,
-        "link": "https://example.com/ml-basics"
+        "link": "https://www.16personalities.com/"
+      },
+      {
+        "id":18,
+        "title":"If the Moon were only 1 pixel",
+        "description":"a tediously acurate map of the solar system, that shows how far appart our planets are, and how space is unimaginably huge, it took me personally 10 minutes to go through it all ",
+        "categoryId":4,
+        "link":"https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html"
+      },
+      {
+        "id":19,
+        "title":"Mandelbrot set generator",
+        "description":"for those familiar with the mathematical concept, or those wanting to learn about it, this website visualized the mandelbrot set, a set of points on a 2D plan that verifies simple properties, but still gives a gorgeous result when rendered on screen ",
+        "categoryId":4,
+        "link":"https://picturelements.github.io/mandelbrot"
+      },
+      {
+        "id":20,
+        "title":"public archive for space telesope images",
+        "description":"JWST, hubble, and many other missions, did a great job at taking pictures of the most distant objects in the sky , the images get processed before being shown to the public, well, did you know that the raw data are available for you to use ? using image processing software like Siril to strech the images, and Gimp to add mulitiple filters together, you can actually process the raw data by yourself and recreate Nasa's gallery pictures ! ",
+        "categoryId":5,
+        "link":"https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html"
+      },
+      {
+        "id":21,
+        "title":"orbital data bank",
+        "description":"Access all info related to the solar system object's orbits, in real time, for you projects",
+        "categoryId":5,
+        "link":"https://ssd.jpl.nasa.gov/tools/"
+      },
+      {
+        "id":22,
+        "title":"satelite map",
+        "description":"check what satelite that will pass above your head this night! ",
+        "categoryId":5,
+        "link":"https://james.darpinian.com/satellites/"
+      },      {
+        "id":23,
+        "title":"Wokwi, arduino and rasberryPi simulator",
+        "description":"as the title suggests, the website gives an accurate simulator for arduino and rasberryPI with all the electornic components available, from a bread board, led, joystick, transistors ... etc, best for prototyping  ",
+        "categoryId":5,
+        "link":"https://wokwi.com/"
+      },
+      {
+        "id":24,
+        "title":"understand fourrier transform",
+        "description":"this website uses intuitive animations to explain what happens behind the scenes when using fourrier transform methods to solve problems, in math, understanding how a method works is the best thing that can happen to a person",
+        "categoryId":1,
+        "link":"https://www.jezzamon.com/fourier/"
       }
+
+      
+
     ]
   }

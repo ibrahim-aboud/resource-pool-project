@@ -8,4 +8,16 @@
     font-family: Montserrat;
     font-size: x-large;
     border-bottom: solid 2px #1E3050;
+    font-weight: 300;
+
+}
+.link{
+    transition: font-weight 0.1s ease;
+}
+.link:hover {
+    font-weight: 500;
+}
+
+.link:not(:hover) {
+    font-weight: 300;
 }
