@@ -1,0 +1,12 @@
+.button{
+    font: large;
+    text-align: center;
+    color: white;
+    background-color: #FF005E;
+    padding: 2vh 2vw ;
+    border: solid 2px #1E3050;
+    font-weight: 500;
+    font-family: Montserrat;
+    border-radius: 40px;
+    width: 15vw;
+}

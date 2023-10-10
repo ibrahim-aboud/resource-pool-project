@@ -1,0 +1,132 @@
+main{
+    background-color: white;
+    font-family: Montserrat;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.imageSeries{
+    display: flex;
+    width: 100vw;
+    opacity: 0.2;
+}
+.fullImage{
+    position: absolute;
+    z-index: -1;
+}
+.bigTitle{
+    padding-top: 70px;
+    z-index: 0;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+}
+.up p{
+    font-size: 3.3vw;
+    font-weight: bold;
+    width: 20vw;
+}
+.up div{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+
+}
+.up div button{
+    color: #1E3050;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: #DBFF00;
+    margin-right : 50px;
+    padding: 10px 60px;
+    border-radius: 60px;
+    border: solid 2px #1E3050
+}
+.up{
+    z-index: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.down{
+    z-index: 0;
+    background-color: transparent;
+    display: flex;
+    margin-top : 50px;
+    justify-content: center;
+    font-size: 20px;
+}
+.blankRectangle{
+    background-color: transparent;
+    background-image: linear-gradient(transparent,white,white);
+    height: 100px;
+    width: 100vw;
+    color: black;    
+}
+p{
+    color: #1E3050;
+    background-color: transparent;
+}
+
+button{
+    color: #1E3050;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+button:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+.bigContainer{
+ 
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+}
+.icon{
+    background-color: #DBFF00;
+}
+.categoryTiles{
+    margin: 250px 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.categoryTile{
+    font-size: 5vw;
+    border: solid 2px #1E3050;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.categoryTile:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.categoryTile:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+.stickyNotificationContainer{
+    position : fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    width: 100%;
+}
+.stickyNotification {
+    position: fixed;
+    bottom: 10%; /* To stick it at the top */
+    /* Alternatively, you can use 'bottom: 0;' to stick it at the bottom */
+    width: auto;
+    background-color: #1E3050;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* To make sure it's above other elements */
+}
