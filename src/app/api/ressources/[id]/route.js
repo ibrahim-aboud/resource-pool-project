@@ -1,11 +1,10 @@
-import ConnectMongodb from "@/src/libs/db";
-import Ressource from "@/src/models/ressource";
-import Categorie from "@/src/models/categorie";
+import ConnectMongodb from "@/libs/db";
 import { NextResponse } from "next/server";
+import Ressource from "@/models/ressource";
 
-export async function GET() {
-    const { id } = request.params;
+export async function GET(request , {params}) {
+    const { id } = params;
     await ConnectMongodb();
-    const ressource = await Ressource.findById(id);
+    const ressource = await Ressource.findById(id).populate("categoryId");
     return NextResponse.json({ ressource });
 }

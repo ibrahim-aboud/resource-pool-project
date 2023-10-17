@@ -12,7 +12,7 @@ export default async function LinkList({params:{id}}){
         return(
             <div className={style.linksContainer}>
                 <NavBar/>
-                {data.map(item => (item.categoryId == id && <Link href={`/linkpage/${item.id}`} ><div style={{backgroundColor:backColorWheel[(item.categoryId-1) % 3 +1] , color:colorWheel[(item.categoryId-1) % 3+1]}} className={style.linkElement} key={item.id}>{item.title}</div></Link> ))}
+                {data.ressources.map(item => (item.categoryId._id == id && <Link href={`/linkpage/${item._id}`} ><div style={{backgroundColor:item.categoryId.bgColor, color:item.categoryId.color}} className={style.linkElement} key={item.id}>{item.title}</div></Link> ))}
             </div>
         )        
     }

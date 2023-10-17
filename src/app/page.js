@@ -67,32 +67,32 @@ export default function Home() {
         </div>
         <div className='blankRectangle'></div>
         <div className='categoryTiles' >
-          <Link id='test1' href={"/linksByCategory/1"} onMouseEnter={() => handleMouseEnter("Learn")} onMouseLeave={() => handleMouseLeave()}>
+          <Link id='test1' href={"/linksByCategory/652ec4df82b1dc59215d73dd"} onMouseEnter={() => handleMouseEnter("Learn")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(162,0,255)"}} className='categoryTile'>
               <BiBrain color='white' />
             </div>
           </Link>
-          <Link href={"/linksByCategory/2"} onMouseEnter={() => handleMouseEnter("Create")} onMouseLeave={() => handleMouseLeave()}>
+          <Link href={"/linksByCategory/652ec50f82b1dc59215d73df"} onMouseEnter={() => handleMouseEnter("Create")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(255,0,94)"}} className='categoryTile'>
               <FaLightbulb color='white' />
             </div>
           </Link>
-          <Link href={"/linksByCategory/3"} onMouseEnter={() => handleMouseEnter("Quick tools")} onMouseLeave={() => handleMouseLeave()}>
+          <Link href={"/linksByCategory/652ec53282b1dc59215d73e1"} onMouseEnter={() => handleMouseEnter("Quick tools")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(219,255,0)"}} className='categoryTile'>
               <AiFillTool color='rgb(45,50,69)'/>
             </div>
           </Link>
-          <Link href={"/linksByCategory/4"} onMouseEnter={() => handleMouseEnter("Explore the web")} onMouseLeave={() => handleMouseLeave()}>
+          <Link href={"/linksByCategory/652ec54382b1dc59215d73e3"} onMouseEnter={() => handleMouseEnter("Explore the web")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(162,0,255)"}} className='categoryTile'>
               <BiSearch color='white' />
             </div>
           </Link>
-          <Link href={"/linksByCategory/5"} onMouseEnter={() => handleMouseEnter("Data banks for free")} onMouseLeave={() => handleMouseLeave()}>
+          <Link href={"/linksByCategory/652ec54f82b1dc59215d73e5"} onMouseEnter={() => handleMouseEnter("Data banks for free")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(255,0,94)"}} className='categoryTile'>
               <BsFillDatabaseFill  color='white' />
             </div>
           </Link>
-          <Link href={"/linksByCategory/6"} onMouseEnter={() => handleMouseEnter("Simulations")} onMouseLeave={() => handleMouseLeave()}>
+          <Link href={"/linksByCategory/652ec55b82b1dc59215d73e7"} onMouseEnter={() => handleMouseEnter("Simulations")} onMouseLeave={() => handleMouseLeave()}>
             <div style={{backgroundColor:"rgb(219,255,0)"}} className='categoryTile'>
               <FaAtom  color='rgb(45,50,69)' />
             </div>

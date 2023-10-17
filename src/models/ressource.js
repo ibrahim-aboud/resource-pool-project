@@ -20,6 +20,6 @@ const ressourceSchema = new mongoose.Schema({
     }
 });
 
-const Ressource = mongoose.model('Ressource', ressourceSchema);
+const Ressource =  mongoose.models.Ressource || mongoose.model('Ressource', ressourceSchema);
 
 export default Ressource;

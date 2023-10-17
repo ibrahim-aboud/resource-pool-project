@@ -12,20 +12,20 @@ export default async function Page({params:{id}}) {
   return (
     <div className={style.main}>
       <NavBar/>
-      <div style={{backgroundColor:backColorWheel[(data.categoryId-1) % 3 +1] , color:colorWheel[(data.categoryId-1) % 3+1]}} className={style.content}>
-        <div className={style.title}>{data.title}</div>
-        <div className={style.description}>{data.description}</div>
+      <div style={{backgroundColor:data.ressource.categoryId.bgColor , color:data.ressource.categoryId.color}} className={style.content}>
+        <div className={style.title}>{data.ressource.title}</div>
+        <div className={style.description}>{data.ressource.description}</div>
       </div>
       <div className={style.buttonContainer}>
-        <Link href={data.link} target="_blank">
-          <div style={{backgroundColor:backColorWheel[(data.categoryId) % 3 +1] , color:colorWheel[(data.categoryId) % 3+1]}} className={style.button}>
+        <Link href={data.ressource.link} target="_blank">
+          <div style={{backgroundColor:data.ressource.categoryId.bgColor , color:data.ressource.categoryId.color}} className={style.button}>
             Visit website
           </div>
         </Link>
       </div>
       <div className={style.buttonContainer}>
-        <Link href={`/linksByCategory/${data.categoryId}`}>
-          <div style={{backgroundColor:backColorWheel[(data.categoryId+1) % 3 +1] , color:colorWheel[(data.categoryId+1) % 3+1]}} className={style.button}>
+        <Link href={`/linksByCategory/${data.ressource.categoryId._id}`}>
+          <div style={{backgroundColor:data.ressource.categoryId.bgColor , color:data.ressource.categoryId.color}} className={style.button}>
             Explore more
           </div>
         </Link>
