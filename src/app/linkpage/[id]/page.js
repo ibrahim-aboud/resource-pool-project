@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 export default async function Page({params:{id}}) {
   const data = await getLink(id)
-  const backColorWheel = {1:"rgb(162,0,255)",2:"rgb(255,0,94)",3:"rgb(219,255,0)"}
-  const colorWheel = {1:"white",2:"white",3:"rgb(30,48,80)"}
+  // const backColorWheel = {1:"rgb(162,0,255)",2:"rgb(255,0,94)",3:"rgb(219,255,0)"}
+  // const colorWheel = {1:"white",2:"white",3:"rgb(30,48,80)"}
   return (
     <div className={style.main}>
       <NavBar/>

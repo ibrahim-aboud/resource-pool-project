@@ -8,7 +8,11 @@ const categorySchema = new mongoose.Schema({
     explanation: {
         type: String,
         required: true
-    }
+    },
+    imagePath: {
+        type: String,
+        required: true
+    },
 });
 
 const Categorie = mongoose.models.Categorie || mongoose.model('Categorie', categorySchema);

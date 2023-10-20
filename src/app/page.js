@@ -12,7 +12,8 @@ import { BsFillDatabaseFill } from 'react-icons/bs';
 import { FaAtom } from 'react-icons/fa';
 import Link from 'next/link.js'
 import StickyBar from "@/components/StickyBar.js"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import React from 'react'
 
 
 export default function Home() {
@@ -24,9 +25,20 @@ export default function Home() {
   const handleMouseLeave = () => {
     setOpacity(0);
   };
+  const [categories,setcategories] = useState([])
   const [opacity,setOpacity] = useState(0)
   const [text,setText]=useState("dummy text")
   var repeat = [1,2,3,4,5,6]
+  const fetchCategories = async () => {
+    const res = await fetch("http://localhost:3000/api/categories")
+    const data = await res.json()
+    setcategories(data.categories);
+  }
+
+  useEffect(()=>{
+    fetchCategories();
+  },[])
+
   return (
     <main>
       <NavBar/>
@@ -67,36 +79,16 @@ export default function Home() {
         </div>
         <div className='blankRectangle'></div>
         <div className='categoryTiles' >
-          <Link id='test1' href={"/linksByCategory/652ec4df82b1dc59215d73dd"} onMouseEnter={() => handleMouseEnter("Learn")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(162,0,255)"}} className='categoryTile'>
-              <BiBrain color='white' />
-            </div>
-          </Link>
-          <Link href={"/linksByCategory/652ec50f82b1dc59215d73df"} onMouseEnter={() => handleMouseEnter("Create")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(255,0,94)"}} className='categoryTile'>
-              <FaLightbulb color='white' />
-            </div>
-          </Link>
-          <Link href={"/linksByCategory/652ec53282b1dc59215d73e1"} onMouseEnter={() => handleMouseEnter("Quick tools")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(219,255,0)"}} className='categoryTile'>
-              <AiFillTool color='rgb(45,50,69)'/>
-            </div>
-          </Link>
-          <Link href={"/linksByCategory/652ec54382b1dc59215d73e3"} onMouseEnter={() => handleMouseEnter("Explore the web")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(162,0,255)"}} className='categoryTile'>
-              <BiSearch color='white' />
-            </div>
-          </Link>
-          <Link href={"/linksByCategory/652ec54f82b1dc59215d73e5"} onMouseEnter={() => handleMouseEnter("Data banks for free")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(255,0,94)"}} className='categoryTile'>
-              <BsFillDatabaseFill  color='white' />
-            </div>
-          </Link>
-          <Link href={"/linksByCategory/652ec55b82b1dc59215d73e7"} onMouseEnter={() => handleMouseEnter("Simulations")} onMouseLeave={() => handleMouseLeave()}>
-            <div style={{backgroundColor:"rgb(219,255,0)"}} className='categoryTile'>
-              <FaAtom  color='rgb(45,50,69)' />
-            </div>
-          </Link>
+          {categories && categories.map((item) => (
+            <Link href={`/linksByCategory/${item._id}`} onMouseEnter={() => handleMouseEnter(item.title)} onMouseLeave={() => handleMouseLeave()}>
+              <div style={{backgroundColor:item.bgColor}} className='categoryTile'>
+                <img src={item.imagePath} alt={item.title} style={{width:"1em",height:"1em"}}/>
+              </div>
+            </Link>
+          ))}
+          {!categories && <div>loading</div>}
+
+          
         </div>
         <div className='stickyNotificationContainer'>
           {/* <div className='stickyNotification'> sticky yes indeed</div> */}

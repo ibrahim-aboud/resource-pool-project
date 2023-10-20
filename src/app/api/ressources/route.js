@@ -1,9 +1,8 @@
 import ConnectMongodb from "@/libs/db";
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
-
-let Ressource = mongoose.model("Ressource");
-let Categorie = mongoose.model("Categorie");
+import Categorie from "@/models/categorie";
+import Ressource from "@/models/ressource";
 
 export async function POST(request) {
     const { title, description, link, category } = await request.json();
